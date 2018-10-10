@@ -6,14 +6,21 @@
 body {
 	font: 18px 'Raleway', sans-serif; 
 }
-h1{font-size:2.0em;}
-h2{font-size:1.3em;}
-section{padding: 2.2em 0;}
-
-
+h1{
+    font-size:2.0em;
+}
+h2{
+    font-size:1.3em;
+}
+section:first-child{
+    padding: 2.6em 0 2.6em 0;
+}
+section{
+    padding: 1.4em 0 2.6em 0;
+}
 /* HEADER */
 header{
-    height:65vh;
+    height:60vh;
     background: 
     linear-gradient(to bottom right,
     rgb(0, 136, 255, 0.4), 
@@ -30,17 +37,18 @@ header{
 header h1{
     text-transform: uppercase;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-shadow: 1px 2px black;
-    margin: 1em 0 0.8em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 header p{
     letter-spacing: 1px;
     line-height: 1.5em;
+    margin: 0.6em 0;
 }
 .avatar{
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     background: 
 	url("../img/myavatar.png") center/cover no-repeat;
     border-radius: 50%;
@@ -70,7 +78,7 @@ header p{
 main{
     margin: 0 auto; max-width: 65%;
 }
-main section{
+main section:not(:last-child){
     border-bottom: 1px solid grey;
 }
 main section h2{
@@ -84,11 +92,7 @@ main section h2{
 	border: 1px solid #989898;
 	margin: 1em 0;
 }
-
-
-
-
-
+/* KONIEC MAIN */
 /* SKILLS */
 .skills{
     display: flex;
@@ -116,10 +120,8 @@ main section h2{
   display: inline-block;
   margin-right: 0.5rem;
 }
-
-
-
-/* SKILLS */
+/* KONIEC SKILLS */
+/* CERTS */
 .certs{
     display: flex;
     padding: 0.4em 0;
@@ -143,8 +145,7 @@ main section h2{
   display: inline-block;
   margin-right: 0.5rem;
 }
-
-
+/* KONIEC CERTS */
 /* EDUCATION */
 .education{
     display: flex;
@@ -165,88 +166,30 @@ main section h2{
     color:#2f2f2f;
 	font-weight: 300;
 }
-
-
-/* TIMELINE */
-.timeline{
-    display: flex;
-    flex-direction: column;
+/* KONIEC EDUCATION */
+/* FOOTER */
+footer{
+    display:flex;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding:4em 0;
+    background: 
+    linear-gradient(to bottom right,
+    rgb(0, 136, 255, 0.4), 
+    rgb(220, 66, 37, 0.3)
+    ),
+    url("../img/izaac-hewitt-lawrence-1087976-unsplash.jpg")
+	center/cover no-repeat;
+    color: white;
 }
-.timeline h1{
-    color: black;
-    font-size:1.6em;
-    text-transform: uppercase;
+footer h2{
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+    margin: 0.5em 0 0.5em 0;
     font-weight: 300;
-    letter-spacing: 3px;
-    margin: 1em 0 0.8em 0;
-    border: 1px solid grey;
-    padding: 0.2em;
 }
-.timeline ul {
-    list-style: none;
-    position: relative;
-}
-.timeline ul:before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:0px;
-    height:100%;
-    border: 2px dashed #989898;
-}
-.timeline ul li{
-    padding:15px;
-    border-radius: 10px;
-    box-shadow: 3px 3px #533d77;
-    background: rgb(255, 255, 255, 0.1);
-    margin: 60px 40px;
-    position:relative;
-}
-.timeline ul li > span{
-    content:'';
-    position:absolute;
-    top:0;
-    left:-40px;
-    width:0px;
-    height:100%;
-    border: 2px solid #989898;
-}
-.timeline ul li > span:before, .timeline  ul li > span:after{
-    content:'';
-    width:10px;
-    height:10px;
-    border: 2px solid  #989898;
-    position: absolute;
-    border-radius: 50px;
-    left:-7px;
-}
-.timeline ul li span:before{
-    top:-15px;
-    background: #9750a3;
-}
-.timeline ul li span:after{
-    top:100%;
-    background: #9750a3;
-}
-.timeline ul li .time span{
-    font-size: 16px;
-    position: absolute;
-    left:-100px;
-    width:30px;
-    text-align: left;
-    color:#1f1f1f;
-}
-.timeline ul li .time span:first-child{
-    top:-15px;
-}
-.timeline ul li .time span:last-child{
-    top:100%;
-}
-/* KONIEC TIMELINE */
+/* KONIEC FOOTER */
 
 
 
