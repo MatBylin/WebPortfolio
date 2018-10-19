@@ -77,7 +77,8 @@ header p{
 
 /* MAIN */
 main{
-    margin: 0 auto;
+    display: block;
+	margin: 0 auto;
     max-width: 70%;
 }
 main section:not(:last-child){
@@ -99,6 +100,7 @@ main section h2{
 /* SKILLS */
 .skills{
     display: flex;
+	flex-wrap: wrap;
     padding: 0.4em 0;
 }
 .skill{
@@ -116,7 +118,7 @@ main section h2{
 }
 .skills h3::before{
     content: "";
-    background: #6998bf;
+    background: #3483c4;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
@@ -219,8 +221,7 @@ footer small a:hover{
     body {
         font: 16px 'Raleway', sans-serif; 
     }
-    
-    header  p {
+    header p {
         padding: 0 3em;
     }
     .description-skill{
@@ -243,7 +244,7 @@ footer small a:hover{
 
 @media all and (min-width: 600px) and (max-width: 980px) {
     body {
-        font: 14px 'Raleway', sans-serif; 
+        font-size: 14px;
     }
     header{
         height:50vh;
@@ -286,7 +287,7 @@ footer small a:hover{
 }
 @media (max-width: 600px){
     body {
-        font: 13px 'Raleway', sans-serif; 
+        font-size: 13px;
     }
     header{
         height:50vh;
@@ -294,14 +295,11 @@ footer small a:hover{
     header p {
         padding: 0 3em;
     }
-    .description-skill{
-        flex: 2;
-    }
     .description-skill p{
         margin-left: 1.6em;
     }
     .skills{
-        flex-direction: column;
+        display: block;
     }
     .skills h3{
         font-size: 0.9rem;
