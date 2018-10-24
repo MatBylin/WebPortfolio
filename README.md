@@ -2,7 +2,7 @@
 Simple web resume made in HTML/CSS - matbylin@gmail.com
 
 ## GitHub Pages
-Check my resume on github pages : [matbylin@gmail.com CV](https://matbylin.github.io/web-cv/)
+Check my resume on github pages : [MatBylinWebResume](https://matbylin.github.io/web-cv/)
 
 ## Credits
 * Background image from [unsplash.com/@lifeofizaac_](https://unsplash.com/@lifeofizaac_/)
